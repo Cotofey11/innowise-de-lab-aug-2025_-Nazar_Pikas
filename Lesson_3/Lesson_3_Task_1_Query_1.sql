@@ -1,10 +1,10 @@
 -- Задача 1:  Найдите всех клиентов из страны 'USA', которым больше 25 лет.
 SELECT
-	c.first_name,
-	c.last_name,
-	c.age,
-	c.country
+	first_name,
+	last_name,
+	age,
+	country
 FROM
-	Customers c
+	Customers 
 WHERE 
-	c.country = 'USA' AND c.age > 25
+	country = 'USA' AND age > 25

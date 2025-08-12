@@ -7,9 +7,9 @@ FROM
 	Customers c
 	INNER JOIN Orders o ON c.customer_id = o.customer_id
 WHERE
-	o.amount IN (
+	o.amount = (
 		SELECT
-			MAX(amount)
+			MAX(amount) AS peak_amount
 		FROM
 			Orders
 	)

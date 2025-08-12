@@ -5,6 +5,6 @@ SELECT
 	amount,
 	customer_id
 FROM
-	Orders o
+	Orders
 WHERE 
-	o.amount > 1000
+	amount > 1000

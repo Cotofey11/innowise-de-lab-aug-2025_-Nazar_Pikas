@@ -1,9 +1,9 @@
 -- Задача 2: Посчитайте общее количество заказов и среднюю сумму по каждому товару.
 SELECT
-	o.item,
-	COUNT(o.order_id),
-	AVG(o.amount)
+	item,
+	COUNT(order_id) AS total_orders,
+	AVG(amount) AS avarage_amount
 FROM
-	Orders o
+	Orders
 GROUP BY
-	o.item
+	item

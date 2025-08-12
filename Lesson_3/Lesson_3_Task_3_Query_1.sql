@@ -1,8 +1,8 @@
 -- Задача 1: Подсчитайте количество клиентов в каждой стране.
 SELECT
-	c.country,
-	COUNT(c.customer_id)
+	country,
+	COUNT(customer_id) AS total_customers_in_country 
 FROM
-	Customers c
+	Customers
 GROUP BY
-	c.country
+	country

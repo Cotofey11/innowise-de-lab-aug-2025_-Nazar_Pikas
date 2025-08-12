@@ -1,9 +1,9 @@
 --Задача 1: Выведите список клиентов, отсортированный по возрасту по убыванию.
 SELECT
-	c.first_name,
-	c.last_name,
-	c.age
+	first_name,
+	last_name,
+	age
 FROM
-	Customers c
+	Customers 
 ORDER BY
-	c.age DESC
+	age DESC
