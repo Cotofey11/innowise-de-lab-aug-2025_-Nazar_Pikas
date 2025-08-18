@@ -11,4 +11,3 @@ UPDATE Employees SET
     LastName = 'SquarePants'
 WHERE
     Department = 'Director';
-

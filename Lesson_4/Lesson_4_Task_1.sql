@@ -18,7 +18,8 @@ WHERE
 -- 4. Обновить Salary 'Alice Smith' до 65000.00.
 UPDATE Employees SET Salary = 65000
 WHERE
-    CONCAT(FirstName, ' ', LastName) = 'Alice Smith';
+    FirstName = 'Alice'
+    AND LastName = 'Smith';
 -- 5. Удалить сотрудника, чья LastName — 'Prince'.
 -- P.S. для этого задания пришлось сделать ON DELETE CASCADE
 -- для EmployeeID в таблице EmployeeProjects

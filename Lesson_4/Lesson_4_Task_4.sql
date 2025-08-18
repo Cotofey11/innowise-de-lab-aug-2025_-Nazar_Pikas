@@ -25,7 +25,7 @@ WHERE
 BEGIN;
     INSERT INTO Projects VALUES
     (4, 'AbraKadabra', 3000, '2025-01-01', '2025-08-17');
-    UPDATE EmployeeProjects SET ProjectID = 4
-    WHERE
-        hoursworked IN (200, 80);
+    INSERT INTO EmployeeProjects VALUES
+    (1, 4, 50),
+    (2, 4, 60);
 COMMIT;
