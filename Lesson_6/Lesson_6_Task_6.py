@@ -17,21 +17,24 @@ elif user_operation == "-":
 elif user_operation == "*":
     print(f"The result of your example: {user_first_number} {user_operation} "
           f"{user_second_number} = {user_first_number * user_second_number}")
-elif user_operation == "/" and user_second_number != 0:
-    print(f"The result of your example: {user_first_number} {user_operation} "
-          f"{user_second_number} = {user_first_number / user_second_number}")
-elif user_operation == "/" and user_second_number == 0:
-    print(f"Division by zero is not allowed.")
+elif user_operation == "/":
+    if user_second_number != 0:
+        print(f"The result of your example: {user_first_number} {user_operation} "
+            f"{user_second_number} = {user_first_number / user_second_number}")
+    else:
+        print(f"Division by zero is not allowed.")
 elif user_operation == "**":
     print(f"The result of your example: {user_first_number} {user_operation} "
           f"{user_second_number} = {user_first_number ** user_second_number}")
-elif user_operation == "%" and user_second_number != 0:
-    print(f"The result of your example: {user_first_number} {user_operation} "
-          f"{user_second_number} = {user_first_number % user_second_number}")
-elif user_operation == "%" and user_second_number == 0:
-    print(f"Division by zero is not allowed.")
-elif user_operation == "//" and user_second_number != 0:
-    print(f"The result of your example: {user_first_number} {user_operation} "
-          f"{user_second_number} = {user_first_number // user_second_number}")
-elif user_operation == "//" and user_second_number == 0:
-    print(f"Division by zero is not allowed.")
+elif user_operation == "%":
+    if user_second_number != 0:
+        print(f"The result of your example: {user_first_number} {user_operation} "
+            f"{user_second_number} = {user_first_number % user_second_number}")
+    else:
+        print(f"Division by zero is not allowed.")
+elif user_operation == "//":
+    if user_second_number != 0:
+        print(f"The result of your example: {user_first_number} {user_operation} "
+            f"{user_second_number} = {user_first_number // user_second_number}")
+    else:
+        print(f"Division by zero is not allowed.")

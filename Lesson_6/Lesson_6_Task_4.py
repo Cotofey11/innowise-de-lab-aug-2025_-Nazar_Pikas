@@ -15,8 +15,7 @@ random_number = randint(1, 64)
 while user_number != random_number:
     if user_number > random_number:
         print("Your number is larger then mine")
-        user_number = int(input("Enter your number: "))
     elif user_number < random_number:
         print("Your number is less then mine")
-        user_number = int(input("Enter your number: "))
+    user_number = int(input("Enter your number: "))
 print("My Congratulations! You won!!")
