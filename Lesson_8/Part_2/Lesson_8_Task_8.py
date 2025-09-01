@@ -18,14 +18,14 @@ student_data: list[dict] = [
 {'name': 'Светлана', 'scores': [98, 95, 100]}
 ]
 
-def calculate_avarage_score(scores: list[int], ignore_lowest: bool = False) -> float:
+def calculate_average_score(scores: list[int], ignore_lowest: bool = False) -> float:
     data = scores.copy()
     if ignore_lowest and len(data) > 1:
         data.remove(min(data))
     return sum(data)/len(data)
 
 for i in range(len(student_data)):
-    print(f"name: {student_data[i].get('name')}, avarage score: {calculate_avarage_score(student_data[i].get('scores'), 
+    print(f"name: {student_data[i].get('name')}, avarage score: {calculate_average_score(student_data[i].get('scores'), 
                                                                                          True)}")
 for i in range(len(student_data)):
-    print(f"name: {student_data[i].get('name')}, avarage score: {calculate_avarage_score(student_data[i].get('scores'))}")
+    print(f"name: {student_data[i].get('name')}, avarage score: {calculate_average_score(student_data[i].get('scores'))}")
