@@ -5,19 +5,9 @@
  3. Создать словарь: {слово: длина} для всех слов
 """
 words: list[str] = ["hello", "world", "python", "code"]
-words_length: list = []
-for i in range(len(words)):
-    words_length.append(len(words[i]))
+words_length: list = [len(word) for word in words]
 print(f"{words_length}")
-words_length_more_then_4: list = []
-for i in range(len(words_length)):
-    if words_length[i] > 4:
-        words_length_more_then_4.append(words_length[i])
+words_length_more_then_4: list = [word for word in words if len(word) > 4]
 print(f"{words_length_more_then_4}")
-words_and_lengths_dictionary: dict = {
-    "hello": len("hello"),
-    "world": len("world"),
-    "python": len("python"),
-    "code": len("code")
-}
+words_and_lengths_dictionary: dict = {word: len(word) for word in words}
 print(words_and_lengths_dictionary)

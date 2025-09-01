@@ -9,6 +9,5 @@
 base_string: str = "Python Programming"
 print(f"String's length: {len(base_string)}")
 print(f"7-th element of string: {base_string[7]}")
-#Честно, не знал как выводить их правильнее(как base_string[-3:]) или же так, поэтому оставил сложный вариант
-print(f"Last 3 elements of string: {base_string[-3], base_string[-2], base_string[-1]}")
-print(f"Does the substring 'gram' exist in the string? {"gram" in base_string}")
+print(f"Last 3 elements of string: {base_string[-3:]}")
+print(f"Does the substring 'gram' exist in the string? {'gram' in base_string}")

@@ -9,5 +9,7 @@ formated_user_email: str = user_email.lower().strip()
 print(f"Formated string: {formated_user_email}")
 #Честно, не знаю как правильно типизировать переменные когда они идут через
 #запятую, поэтому оставил так.
-user_name, user_domain= formated_user_email.split('@')
+user_name: str
+user_domain: str
+user_name, user_domain = formated_user_email.split('@')
 print(f"Username: {user_name}, Domain: {user_domain}")
