@@ -11,13 +11,11 @@ Python
 Используя цикл, пройдитесь по списку student_data. 2 раза, первый раз
 учитывая все оценки, а второй раз отбросив худшие оценки
 """
-
 student_data: list[dict] = [
 {'name': 'Алексей', 'scores': [85, 92, 78, 95]},
 {'name': 'Марина', 'scores': [65, 70, 58, 82]},
 {'name': 'Светлана', 'scores': [98, 95, 100]}
 ]
-
 def calculate_average_score(scores: list[int], ignore_lowest: bool = False) -> float:
     data = scores.copy()
     if ignore_lowest and len(data) > 1:
